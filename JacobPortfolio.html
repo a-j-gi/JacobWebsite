@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JacobPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #611f33;
+            font-family: "Pixelify Sans", sans-serif;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #a00048e0;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #eeb2cc;
+            text-align: center;
+            font-size: small;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #bd2d60;
+            color: #430e1d;
+        }
+
+        .active {
+            background-color: #681843;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .sign {
+            padding: 20px;
+            border: 6px solid #f9c4d4;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            background-image: linear-gradient(#a00048e0, rgb(211, 122, 144));
+            border-radius: 10px;
+        }
+
+        .text-outline2 {
+            color: #f3a8e5;
+            font-size: 29px;
+            text-shadow: -1px -1px 0 #c55e5e, 1px -1px 0 #591199, -1px 1px 0 #326a3f, 2px 2px 0 #4e103b;
+            margin-top: 50px;
+        }
+
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            gap: 20px; 
+        }
+
+        .carousel {
+            width: calc(50% - 20px); 
+            max-width: 300px;
+            margin-bottom: 20px; 
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+            display: none; 
+        }
+
+        .carousel img.active {
+            display: block; 
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: rgb(111, 18, 67);
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .labels {
+            transform: translateY(-50%);
+            color: #eeb2cc;
+            font-size: 18px; 
+            font-family: 'Pixelify Sans', sans-serif;
+            z-index: 100; 
+            padding-bottom: -200px;
+            background-color: #7d164d;
+            margin-bottom: -20px;
+            border-radius: 10px;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #a00048e0;
+            padding: 10px 0;
+            text-align: center;
+            color: #eeb2cc;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+<nav>
+    <a href="JacobWebsite.html">Home</a>
+    <a href="JacobAbout.html">About</a>
+    <a class="active" href="JacobPortfolio.html">Portfolio</a>
+    <a href="JacobContact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sign">
+        <div class="banner"></div>
+
+        <div class="labels">
+            <h2 class="text-outline2">= Schoolwork =</h2>
+            <p style="padding-top: 10px;">WEB DEVELOPMENT</p>
+            <p>COMPUTER PROGRAMMING</p>
+            <p style="padding-bottom: 10px;">CSS</p>
+        </div>
+
+
+        <div class="carousel-container">
+
+            <div class="carousel">
+                <img src="wd1.jpg" alt="Image 1" class="active">
+                <img src="wd2.jpg" alt="Image 2">
+                <img src="wd3.jpg" alt="Image 3">
+                <img src="wd4.jpg" alt="Image 4">
+                <img src="wd5.jpg" alt="Image 5">
+                <img src="wd6.jpg" alt="Image 6">
+                <img src="wd7.jpg" alt="Image 7">
+                <img src="wd8.jpg" alt="Image 8">
+                <img src="wd9.jpg" alt="Image 9">
+                <img src="wd10.jpg" alt="Image 10">
+                <img src="wd11.jpg" alt="Image 11">
+                <img src="wd12.jpg" alt="Image 12">
+                <img src="wd13.jpg" alt="Image 13">
+                <img src="wd14.jpg" alt="Image 14">
+                <img src="wd155.gif" alt="Image 15">
+                <button class="prev">❁</button>
+                <button class="next">❁</button>
+            </div>
+
+            <div class="carousel">
+                <img src="comprog/cm1.jpg" alt="Image 1" class="active">
+                <img src="comprog/cm2.jpg" alt="Image 2">
+                <img src="comprog/cm3.gif" alt="Image 3">
+                <img src="comprog/cm4.gif" alt="Image 4">
+                <img src="comprog/cm5.jpg" alt="Image 5">
+                <img src="comprog/cm6.gif" alt="Image 6">
+                <img src="comprog/cm7.gif" alt="Image 7">
+                <img src="comprog/cm8.gif" alt="Image 8">
+                <img src="comprog/cm9.gif" alt="Image 9">
+                <img src="comprog/cm10.gif" alt="Image 10">
+                <img src="comprog/cm11.gif" alt="Image 11">
+                <button class="prev">❁</button>
+                <button class="next">❁</button>
+            </div>
+
+            <div class="carousel">
+                <img src="cs1.jpg" alt="Image 1" class="active">
+                <img src="cs2.jpg" alt="Image 2">
+                <img src="cs3.jpg" alt="Image 3">
+                <button class="prev">❁</button>
+                <button class="next">❁</button>
+            </div>
+
+            <div class="carousel">
+                <img src="gfffsgfdg.jpg" alt="Image 1" class="active">
+                <img src="cs3.jpg" alt="Image 2">
+                <img src="cs1.jpg" alt="Image 3">
+                <img src="cs2.jpg" alt="Image 4">
+                <button class="prev">❁</button>
+                <button class="next">❁</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    </div>
+
+<script src="JacobWebsite.js"></script>
+
+<footer style="background-color: #a00048e0; padding: 0.1px; text-align: center; color: #eeb2cc; font-family: 'Pixelify Sans', sans-serif;">
+    <p>&copy; 2024 Anisia Jacob. All rights reserved.</p>
+</footer>
